@@ -1,9 +1,12 @@
 <script setup>
-import { useRouter } from 'vue-router';
+import { useRouter, useRoute } from 'vue-router';
 
 const router = useRouter()
+const route = useRoute()
 
 const push  = () => {
+    console.log(route.query)
+    console.log(route.path)
     router.push('push')
 }
 
