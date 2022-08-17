@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter, useRoute } from 'vue-router';
 import Input from './components/Input.vue'
+import Button from './components/Button.vue'
 import Card from './Card.vue'
 
 const router = useRouter()
@@ -26,7 +27,7 @@ const items = [
         <form>
             <Input placeholder="Digite seu usuário" />
             <Input placeholder="Digite sua senha" />
-            <button @click="push()">Login</button>
+            <Button @click="push()" btn_title="Adote Agora"></Button>
         </form>
         <Card v-for="item in items">
             <p>{{ item }}</p>
@@ -36,7 +37,7 @@ const items = [
 
 <style scoped>
 .father {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     height: 100%;
     align-items: center;
@@ -44,7 +45,7 @@ const items = [
 }
 
 form {
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     flex-direction: column;
 }
