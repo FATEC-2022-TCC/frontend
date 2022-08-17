@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter, useRoute } from 'vue-router';
 import Input from './components/Input.vue'
+import Card from './Card.vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -11,6 +12,13 @@ const push = () => {
     router.push('push')
 }
 
+const items = [
+    "DOni",
+    "Luiz",
+    "Luiz",
+    "Luiz"
+]
+
 </script>
 
 <template>
@@ -20,17 +28,23 @@ const push = () => {
             <Input placeholder="Digite sua senha" />
             <button @click="push()">Login</button>
         </form>
+        <Card v-for="item in items">
+            <p>{{ item }}</p>
+        </Card>
     </div>
 </template>
 
 <style scoped>
 .father {
+    background-color: red;
     display: flex;
     height: 100%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
 form {
+    background-color: blue;
     display: flex;
     flex-direction: column;
 }

@@ -4,8 +4,8 @@ import Login from './Login.vue';
 </script>
 
 <template>
-  <Login />
-  <!-- <RouterView /> -->
+  <!-- <Login /> -->
+  <RouterView />
 </template>
 
 <style scoped>
