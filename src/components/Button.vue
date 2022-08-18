@@ -16,5 +16,6 @@
     font-size: 12px;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 </style>

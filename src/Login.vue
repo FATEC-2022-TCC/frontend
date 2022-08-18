@@ -29,9 +29,6 @@ const items = [
             <Input placeholder="Digite sua senha" />
             <Button @click="push()" btn_title="Adote Agora"></Button>
         </form>
-        <Card v-for="item in items">
-            <p>{{ item }}</p>
-        </Card>
     </div>
 </template>
 
