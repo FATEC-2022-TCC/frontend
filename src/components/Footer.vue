@@ -4,19 +4,6 @@
 
 <template>
     <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3>Quatro<span>Patas</span></h3>
-            <p class="footer-links">
-                <a href="#">Home</a>
-                |
-                <a href="#">Rules</a>
-                |
-                <a href="#">Adoption</a>
-                |
-                <a href="#">Contact</a>
-            </p>
-            <p class="footer-company-name">Copyright © 2022 <strong>Quatro Patas</strong> All rights reserved</p>
-        </div>
         <div class="footer-center">
             <div>
                 <ion-icon name="location-outline"></ion-icon>
@@ -32,52 +19,25 @@
             </div>
         </div>
         <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                <strong>Sagar Developer</strong> is a Youtube channel where you can find more creative CSS Animations
-                and
-                Effects along with
-                HTML, JavaScript and Projects using C/C++.
-            </p>
-            <div class="footer-icons">
-                <a href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </div>
+            <h3>Quatro<span>Patas</span></h3>
+            <p class="footer-company-name">Copyright © 2022 <strong>Quatro Patas</strong> All rights reserved</p>
         </div>
     </footer>
 </template>
 
 <style>
 footer {
-    position: fixed;
     bottom: 0;
-}
-
-@media (max-height:800px) {
-    footer {
-        position: static;
-    }
-
-    header {
-        padding-top: 40px;
-    }
+    position: fixed;
 }
 
 .footer-distributed {
     background-color: #2d2a30;
     box-sizing: border-box;
-    width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
-    margin-top: 80px;
+    padding: 24px;
+    width: 100%;
 }
 
 .footer-distributed .footer-left,
@@ -166,7 +126,6 @@ footer {
 .footer-distributed .footer-center p a {
     color: #e0ac1c;
     text-decoration: none;
-    ;
 }
 
 /* Footer Right */
@@ -216,21 +175,5 @@ footer {
 
 .footer-links a:hover {
     color: #3F71EA;
-}
-
-@media (max-width: 880px) {
-
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    .footer-distributed .footer-center i {
-        margin-left: 0;
-    }
 }
 </style>

@@ -7,6 +7,6 @@ const storeCounter = useCounterStore()
 
 <template>
     <p>
-        Home
+        Rules
     </p>
 </template>

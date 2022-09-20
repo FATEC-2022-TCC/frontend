@@ -1,5 +1,10 @@
-<script>
+<script setup>
+    import { useRouter } from 'vue-router';
+    const router = useRouter()
 
+    const push = name => {
+        router.push(name)
+    }
 </script>
 
 <template>
@@ -29,7 +34,7 @@
 
     <nav>
         <div class="logo">
-            <a href="#"><img src="../assets/quatro.png" alt="logo"></a>
+            <a href="#"><img src="quatro.png" alt="logo"></a>
         </div>
         <toggle>
             <a href="#">
@@ -37,11 +42,11 @@
             </a>
         </toggle>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Rules</a></li>
-            <li><a href="#">Adoption</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a @click="push('home')">Home</a></li>
+            <li><a @click="push('rules')">Rules</a></li>
+            <li><a @click="push('adoption')">Adoption</a></li>
+            <li><a @click="push('login')">Login</a></li>
+            <li><a @click="push('contact')">Contact</a></li>
         </ul>
     </nav>
 

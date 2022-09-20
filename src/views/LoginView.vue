@@ -1,25 +1,6 @@
 <script setup>
-import { useRouter, useRoute } from 'vue-router';
-import Input from './components/Input.vue'
-import Button from './components/Button.vue'
-import Card from './Card.vue'
-
-const router = useRouter()
-const route = useRoute()
-
-const push = () => {
-    console.log(route.query)
-    console.log(route.path)
-    router.push('push')
-}
-
-const items = [
-    "DOni",
-    "Luiz",
-    "Luiz",
-    "Luiz"
-]
-
+import Input from '../components/Input.vue'
+import Button from '../components/Button.vue'
 </script>
 
 <template>

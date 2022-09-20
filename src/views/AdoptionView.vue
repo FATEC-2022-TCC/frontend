@@ -3,9 +3,7 @@
 </script>
 
 <template>
-    <p>I'm pushed</p>
+    <p>
+        Adoption
+    </p>
 </template>
-
-<style>
-
-</style>

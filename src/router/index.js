@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Login from '../Login.vue'
-import Push from '../Push.vue'
-import Card from '../Card.vue'
+
+import LoginView from '../views/LoginView.vue'
+import HomeView from '../views/HomeView.vue'
+import RulesView from '../views/RulesView.vue'
+import AdoptionView from '../views/AdoptionView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,17 +12,27 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
-      component: Login
+      component: LoginView
     },
     {
-      path: '/push',
-      name: 'push',
-      component: Push
+      path: '/home',
+      name: 'home',
+      component: HomeView
     },
     {
-      path: '/card',
-      name: 'card',
-      component: Card
+      path: '/rules',
+      name: 'rules',
+      component: RulesView
+    },
+    {
+      path: '/adoption',
+      name: 'adoption',
+      component: AdoptionView
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView
     }
   ]
 })

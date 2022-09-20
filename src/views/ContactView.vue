@@ -7,6 +7,6 @@ const storeCounter = useCounterStore()
 
 <template>
     <p>
-        Home
+        Contact
     </p>
 </template>
