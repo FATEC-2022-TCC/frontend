@@ -3,55 +3,55 @@
 </script>
 
 <template>
- <footer class="footer-distributed">
-
-<div class="footer-left">
-    <h3>Quatro<span>Patas</span></h3>
-
-    <p class="footer-links">
-        <a href="#">Home</a>
-        |
-        <a href="#">Rules</a>
-        |
-        <a href="#">Adoption</a>
-        |
-        <a href="#">Contact</a>
-    </p>
-
-    <p class="footer-company-name">Copyright © 2022 <strong>Quatro Patas</strong> All rights reserved</p>
-</div>
-
-<div class="footer-center">
-    <div>
-        <ion-icon name="location-outline"></ion-icon>
-        <p><span>Jaguariuna-SP</span></p>
-    </div>
-
-    <div>
-        <i class="fa fa-phone"></i>
-        <p>4002-8922</p>
-    </div>
-    <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:sagar00001.co@gmail.com">donigostoso@gmail.com</a></p>
-    </div>
-</div>
-<div class="footer-right">
-    <p class="footer-company-about">
-        <span>About the company</span>
-        <strong>Sagar Developer</strong> is a Youtube channel where you can find more creative CSS Animations
-        and
-        Effects along with
-        HTML, JavaScript and Projects using C/C++.
-    </p>
-    <div class="footer-icons">
-        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-
-    </div>
-</div>
-</footer>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Quatro<span>Patas</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">Rules</a>
+                |
+                <a href="#">Adoption</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2022 <strong>Quatro Patas</strong> All rights reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <ion-icon name="location-outline"></ion-icon>
+                <p><span>Jaguariuna-SP</span></p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>4002-8922</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">donigostoso@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Sagar Developer</strong> is a Youtube channel where you can find more creative CSS Animations
+                and
+                Effects along with
+                HTML, JavaScript and Projects using C/C++.
+            </p>
+            <div class="footer-icons">
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
 </template>
 
 <style>
@@ -64,6 +64,7 @@ footer {
     footer {
         position: static;
     }
+
     header {
         padding-top: 40px;
     }
@@ -79,7 +80,9 @@ footer {
     margin-top: 80px;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
 }
@@ -91,7 +94,7 @@ footer {
 }
 
 .footer-distributed h3 {
-    color:#7918D9;
+    color: #7918D9;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
 }
@@ -216,14 +219,18 @@ footer {
 }
 
 @media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
     }
+
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
-}    
+}
 </style>

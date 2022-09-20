@@ -5,18 +5,25 @@
 <template>
     <div class="top-bar">
         <span>
-            <ion-icon name="call-outline"></ion-icon> 4002 - 8922
+            <ion-icon name="call-outline" />
+            4002 - 8922
         </span>
         <ul>
-            <li><a href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a></li>
-            <li><a href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-            <li><a href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram" />
+                </a>
+            </li>
         </ul>
     </div>
 
