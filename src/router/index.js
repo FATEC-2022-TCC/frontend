@@ -5,6 +5,7 @@ import HomeView from '../views/HomeView.vue'
 import RulesView from '../views/RulesView.vue'
 import AdoptionView from '../views/AdoptionView.vue'
 import ContactView from '../views/ContactView.vue'
+import CreateAccountView from '../views/CreateAccountView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: ContactView
+    },
+    {
+      path: '/createAccount',
+      name: 'createAccount',
+      component: CreateAccountView
     }
   ]
 })

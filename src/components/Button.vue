@@ -1,10 +1,10 @@
 <script setup>
-    const props = defineProps(['btn_title'])
-    const { btn_title } = props
+    const props = defineProps(['title'])
+    const { title } = props
 </script>
 
 <template>
-    <button class="btn-primary" >{{ btn_title }}</button>
+    <button type="button" class="btn-primary" >{{ title }}</button>
 </template>
 
 <style>

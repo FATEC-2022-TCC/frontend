@@ -1,6 +1,13 @@
 <script setup>
 import Input from '../components/Input.vue'
 import Button from '../components/Button.vue'
+
+import { useRouter } from 'vue-router';
+const router = useRouter()
+
+const push = name => {
+    router.push(name)
+}
 </script>
 
 <template>
@@ -8,7 +15,8 @@ import Button from '../components/Button.vue'
         <form>
             <Input placeholder="Digite seu usuário" />
             <Input placeholder="Digite sua senha" />
-            <Button @click="push()" btn_title="Adote Agora"></Button>
+            <Button title="Adote Agora" />
+            <Button @click="push('createAccount')" title="Quer adotar?" />
         </form>
     </div>
 </template>
